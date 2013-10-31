@@ -41,3 +41,7 @@ service "keepalived" do
   action [:enable, :start]
   subscribes :restart, "template[keepalived.conf]"
 end
+
+keepalived_clean node[:fqdn] do
+  notifies :reload, resources(:service => "keepalived"), :delayed
+end
