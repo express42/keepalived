@@ -9,7 +9,7 @@ action :create do
 
 
   r = template "vrrp_#{new_resource.name.upcase}" do
-    path "/etc/keepalived/conf.d/vrrp_#{new_resource.name.upcase}.conf"
+    path "#{node['keepalived']['confpath']}/vrrp_#{new_resource.name.upcase}.conf"
     source "vrrp_generic.conf.erb"
     cookbook "keepalived"
     owner "root"

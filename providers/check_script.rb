@@ -1,6 +1,6 @@
 action :create do
   r = template new_resource.name do
-    path "/etc/keepalived/conf.d/script_#{new_resource.name}.conf"
+    path "#{node['keepalived']['confpath']}/script_#{new_resource.name}.conf"
     source "script_generic.conf.erb"
     cookbook "keepalived"
     owner "root"
