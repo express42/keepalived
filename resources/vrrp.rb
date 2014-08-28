@@ -8,8 +8,10 @@ attribute :state, :kind_of => String, :equal_to => ["MASTER", "BACKUP"], :defaul
 attribute :noprempt, :kind_of => [TrueClass, FalseClass], :default => false
 attribute :priority, :kind_of => Integer, :default => 100
 attribute :virtual_ipaddress, :kind_of => Array, :required => true
+attribute :virtual_ipaddress_cidr, :kind_of => Integer, :default => 32
 
 # Optional attributes
+attribute :virtual_routes, :kind_of => Array, :required => false
 attribute :advert_int, :kind_of => Integer, :required => false
 attribute :auth_type, :kind_of => String, :equal_to => ["pass", "ah"], :required => false
 attribute :auth_pass, :kind_of => String, :required => false
