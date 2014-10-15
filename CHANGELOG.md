@@ -19,6 +19,10 @@ This file is used to list changes made in each version of the keepalived cookboo
 -----
 - Igor Kurochkin - add track_interface vrrp attribute
 
+1.0.3
+-----
+- Igor Kurochkin - add array support for virtual_routes
+
 - - -
 Check the [Markdown Syntax Guide](http://daringfireball.net/projects/markdown/syntax) for help with Markdown.
 
