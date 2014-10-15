@@ -11,6 +11,10 @@ This file is used to list changes made in each version of the keepalived cookboo
 -----
 - Alexander Titov - first working version
 
+1.0.1
+-----
+- Igor Kurochkin - remove virtual_ipaddress_cidr vrrp attribute
+
 - - -
 Check the [Markdown Syntax Guide](http://daringfireball.net/projects/markdown/syntax) for help with Markdown.
 
