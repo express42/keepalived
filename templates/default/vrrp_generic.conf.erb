@@ -30,6 +30,14 @@ vrrp_instance <%= @name.upcase %> {
   }
   <% end -%>
 
+  <% if @params.has_key?("track_interface") %>
+  track_interface {
+    <% @params['track_interface'].each do |interface| %>
+      <%= interface %>
+    <% end %>
+  }
+  <% end -%>
+
   <% if @params.has_key?("track_script") %>
   track_script {
     <%= @params["track_script"] %>

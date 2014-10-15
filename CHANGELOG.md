@@ -15,6 +15,10 @@ This file is used to list changes made in each version of the keepalived cookboo
 -----
 - Igor Kurochkin - remove virtual_ipaddress_cidr vrrp attribute
 
+1.0.2
+-----
+- Igor Kurochkin - add track_interface vrrp attribute
+
 - - -
 Check the [Markdown Syntax Guide](http://daringfireball.net/projects/markdown/syntax) for help with Markdown.
 
