@@ -1,6 +1,6 @@
 # Description
 
-Installs/Configures keepalived
+Installs and configures keepalived
 
 # Requirements
 
@@ -15,18 +15,18 @@ Installs/Configures keepalived
 
 # Attributes
 
-* `node["keepalived"]["shared_address"]` -  Defaults to `"true"`.
-* `node["keepalived"]["confpath"]` -  Defaults to `"/etc/keepalived/conf.d/"`.
-* `node["keepalived"]["notification_emails"]` -  Defaults to `"alert@test.local"`.
-* `node["keepalived"]["notification_email_from"]` -  Defaults to `"alert@\#{node[\"domain\"] || \"test.local\"}"`.
-* `node["keepalived"]["smtp_server"]` -  Defaults to `"127.0.0.1"`.
-* `node["keepalived"]["smtp_connect_timeout"]` -  Defaults to `"30"`.
-* `node["keepalived"]["router_id"]` -  Defaults to `"node[\"fqdn\"]"`.
-* `node["keepalived"]["router_ids"]` -  Defaults to `"{ ... }"`.
+* `node['keepalived']['shared_address']` -  Defaults to `"true"`.
+* `node['keepalived']['confpath']` -  Defaults to `"/etc/keepalived/conf.d/"`.
+* `node['keepalived']['notification_emails']` -  Defaults to `"alert@test.local"`.
+* `node['keepalived']['notification_email_from']` -  Defaults to `"alert@\#{node['domain'] || 'test.local'}"`.
+* `node['keepalived']['smtp_server']` -  Defaults to `"127.0.0.1"`.
+* `node['keepalived']['smtp_connect_timeout']` -  Defaults to `"30"`.
+* `node['keepalived']['router_id']` -  Defaults to `"node['fqdn']"`.
+* `node['keepalived']['router_ids']` -  Defaults to `"{ ... }"`.
 
 # Recipes
 
-* keepalived::default
+* keepalived::default - Installs and configures keepalived.
 
 # Resources
 
