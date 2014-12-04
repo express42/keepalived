@@ -17,31 +17,31 @@
 # limitations under the License.
 #
 
-package "keepalived" do
+package 'keepalived' do
   action :install
 end
 
-directory "/etc/keepalived/conf.d" do
+directory '/etc/keepalived/conf.d' do
   action :create
-  owner "root"
-  group "root"
-  mode "0775"
+  owner 'root'
+  group 'root'
+  mode '0775'
 end
 
-template "keepalived.conf" do
-  path "/etc/keepalived/keepalived.conf"
-  source "keepalived.conf.erb"
-  owner "root"
-  group "root"
+template 'keepalived.conf' do
+  path '/etc/keepalived/keepalived.conf'
+  source 'keepalived.conf.erb'
+  owner 'root'
+  group 'root'
   mode 0644
 end
 
-service "keepalived" do
-  supports :restart => true, :status => true
+service 'keepalived' do
+  supports restart: true, status: true
   action [:enable, :start]
-  subscribes :restart, "template[keepalived.conf]"
+  subscribes :restart, 'template[keepalived.conf]'
 end
 
-keepalived_clean node[:fqdn] do
-  notifies :reload, resources(:service => "keepalived"), :delayed
+keepalived_clean node['fqdn'] do
+  notifies :reload, 'service[keepalived]', :delayed
 end
