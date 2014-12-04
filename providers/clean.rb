@@ -25,9 +25,7 @@
    # get list of files created by provider
    resources_list.each do |r|
      files_list.each do |f|
-       if f.match(r)
-         resource_files.push(f)
-       end
+       resource_files.push(f) if f.match(r)
      end
    end
 
