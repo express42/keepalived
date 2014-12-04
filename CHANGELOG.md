@@ -3,25 +3,31 @@ keepalived CHANGELOG
 
 This file is used to list changes made in each version of the keepalived cookbook.
 
-0.1.0
+1.0.4
 -----
-- Alexander Titov - Initial release of keepalived
+- Igor Kurochkin - Fix Rubocop and Foodcritic warnings
+- Igor Kurochkin - Add Test Kitchen, Rubocop and Travis CI
+- Igor Kurochkin - Update README
 
-1.0.0
+1.0.3
 -----
-- Alexander Titov - first working version
-
-1.0.1
------
-- Igor Kurochkin - remove virtual_ipaddress_cidr vrrp attribute
+- Igor Kurochkin - add array support for virtual_routes
 
 1.0.2
 -----
 - Igor Kurochkin - add track_interface vrrp attribute
 
-1.0.3
+1.0.1
 -----
-- Igor Kurochkin - add array support for virtual_routes
+- Igor Kurochkin - remove virtual_ipaddress_cidr vrrp attribute
+
+1.0.0
+-----
+- Alexander Titov - first working version
+
+0.1.0
+-----
+- Alexander Titov - Initial release of keepalived
 
 - - -
 Check the [Markdown Syntax Guide](http://daringfireball.net/projects/markdown/syntax) for help with Markdown.
