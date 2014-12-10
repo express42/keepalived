@@ -3,6 +3,12 @@ keepalived CHANGELOG
 
 This file is used to list changes made in each version of the keepalived cookbook.
 
+1.0.5
+-----
+- Igor Kurochkin - Add Berkshelf and Serverspec
+- Igor Kurochkin - Add fixture cookbook
+- Igor Kurochkin - Update README
+
 1.0.4
 -----
 - Igor Kurochkin - Fix Rubocop and Foodcritic warnings
