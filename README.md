@@ -9,10 +9,6 @@ Installs and configures keepalived
 * Debian
 * Ubuntu
 
-## Cookbooks:
-
-*No dependencies defined*
-
 # Attributes
 
 * `node['keepalived']['shared_address']` -  Defaults to `"true"`.
@@ -95,8 +91,13 @@ Installs and configures keepalived
 - notify_backup:
 - notify_fault:
 
+# Usage
+
+See fixture cookbook in `tests/fixtures/cookbooks`.
+
+
 # License and Maintainer
 
-Maintainer:: Express42 (<info@express42.com>)
+Maintainer:: LLC Express 42 (<cookbooks@express42.com>)
 
 License:: MIT
